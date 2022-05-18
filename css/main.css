@@ -1,0 +1,280 @@
+/* COMMON */
+body {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: 'Montserrat', sans-serif;
+
+}
+img {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+.inner {
+    position: relative;
+    width:100%;
+    
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 1;
+    background-color: #6610f2;
+    
+}
+header .inner {
+    
+    height: 120px;
+    
+
+}
+header .logo {
+    transform: translateY(-50%);
+    position: absolute;
+    top:50%;
+    
+    margin:  auto;
+    color:#fff;
+    left: 5%;
+}
+header .logo p{
+    font-size: 40px;
+    font-weight: 800;
+    
+}
+header .inner .sub-menu{
+    position: absolute;
+    right: 10px;
+    top:10px;
+    
+
+}
+header .inner .sub-menu .menu{
+   display: flex;
+
+}
+header .inner .sub-menu .menu li {
+    margin-left: 20px;;
+    position: relative;
+}
+header .inner .sub-menu .menu li:first-child:before {
+    display: none;
+}
+
+header .inner .sub-menu .menu li::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 25px;
+    background-color: #e5e5e5;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: -10px;
+    margin: auto ;
+
+    
+}
+header .inner .sub-menu .menu li a{
+    background-color: white;
+   
+    font-size: 25px;
+    
+    
+    
+}
+header .inner .sub-menu .menu li a i {
+    display: block;
+    color:#fff;
+
+}
+header .inner .main-menu{
+
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+header .inner .main-menu .item {
+    
+}
+
+header .inner .main-menu .item {
+    
+    
+}
+header .inner .main-menu .item .item__name {
+    font-size: 20px;
+    padding:  10px 20px 20px 20px;
+    margin-left: 20px;
+    color:#fff;
+    font-weight: 300;
+}
+header .inner .main-menu .item:hover .item__name {
+    color:#333;
+    font-weight: 500 ;
+    cursor:pointer;
+}
+
+/* SECTION */
+section.visual {
+    margin-top: 120px;
+    background-color: #6610f2;
+    
+
+  
+}
+section.visual .inner {
+    height: 600px;
+   
+
+}
+section.visual .inner {
+   padding-top: 150px;
+}
+section.visual .inner .photo {
+    width:400px;
+    height: 400px;
+
+    margin: auto;
+    overflow: hidden;
+    border-radius: 250px;
+    box-sizing: border-box;
+}
+section.visual .inner .photo img {
+    width:100%;
+    height: 100%;
+}
+section.visual .inner .photo-txt {
+     
+     
+    
+     margin: 50px auto;
+   
+     position: relative;
+
+}
+section.visual .inner .photo-txt p {
+    color:#fff;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 2.5;
+
+}
+
+section.visual .inner .photo-txt::before {
+    content: "";
+    width: 70px;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    transform: translateX(-50%);
+}
+
+section.visual-01 .inner {
+    height: 600px;
+    background-color: #410b98;
+
+   
+
+}
+section.visual-01 .inner .about-me {
+    padding-top: 150px;
+    width: 500px;
+    
+    margin:auto;
+}
+section.visual-01 .inner .about-me p{
+    
+    font-size: 30px;
+    color:white;
+    font-weight: 700;
+    line-height: 50px;
+}
+section.visual-02 .inner {
+    height: 500px;
+    background-color: orange;
+   
+
+}
+section.visual-02 .inner .plan{
+    padding-top: 100px;
+    
+     margin: auto;
+
+
+   
+
+}
+section.visual-02 .inner .plan p {
+    font-size: 50px;
+    text-align: center;
+    line-height: 2;
+    color: #fff;
+    font-weight: 400;
+
+   
+
+}
+
+section.visual-03 .inner {
+    height: 600px;
+    background-color: purple; 
+    position: relative;
+}
+section.visual-03 .inner .slide {
+    width:1100px; 
+    height: 600px;;
+    background-color: red;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+section.visual-03 .inner .slide .item {
+    width:1100px;
+    height: 600px;;
+    float: left;;
+    margin: 0;
+    font-size: 100px;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    
+}
+
+
+section.visual-04 .inner {
+    height: 200px;
+    background-color: darkblue;
+    position: relative;
+
+}
+
+section.visual-04 .inner ul.contact {
+   display: flex;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.visual-04 .inner ul.contact li a i{
+
+    color: #fff;
+    font-size: 50px;
+}
+section.visual-04 .inner ul.contact li  {
+
+    margin:30px;
+}

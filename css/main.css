@@ -36,6 +36,8 @@ a {
     background-color: rgba(0,0,0,0.4);
     z-index: 2;
     display: none;
+    left: 0;
+    top:0;
 }
 .wrap .modal__Photo {
     max-width: 700px;

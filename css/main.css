@@ -1,10 +1,12 @@
 /* COMMON */
 body {
+    
     color: #333;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
     font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to top,rgba(53,9,60,1), rgb(43, 53, 195), rgba(15,174,178,1));
 
 }
 img {
@@ -18,15 +20,62 @@ a {
     width:100%;
     
 }
+.wrap {
 
+    width: 100%;
+    height: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+   
+}
+/* 모달 */
+.wrap .modal {
+    position: fixed;
+    width: 100%;    
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 2;
+    display: none;
+}
+.wrap .modal__Photo {
+    max-width: 700px;
+    overflow: hidden;
+    max-height: 700px;
+  
+    background-color: red;
+    position: absolute;
+    top:50%;
+    left: 50%;;
+    transform: translate(-50%,-50%);
+
+}
+.wrap .modal__Photo img {
+    width: 100%;
+}
+
+.wrap .modal i {
+    font-size: 50px;
+    top:25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    color:white;
+}
+.wrap .modal i:hover {
+    color:rgb(242, 56, 56);
+    transition: 0.5s;
+    cursor: pointer;
+}
 /* HEADER */
 
 header {
     width: 100%;
     position: fixed;
     top:0;
+    left: 0;
     z-index: 1;
-    background-color: #6610f2;
+    background-color: rgba(15,174,178,1);
+  border-bottom: 1px solid rgb(122, 121, 121);
     
 }
 header .inner {
@@ -96,12 +145,16 @@ header .inner .sub-menu .menu li a i {
 
 }
 header .inner .main-menu{
-
+    color: #fff;
     display: flex;
     position: absolute;
     bottom: 0;
     right: 0;
 }
+header .inner .main-menu a {
+    color:#fff;
+}
+
 header .inner .main-menu .item {
     
 }
@@ -124,9 +177,10 @@ header .inner .main-menu .item:hover .item__name {
 }
 
 /* SECTION */
+
 section.visual {
     margin-top: 120px;
-    background-color: #6610f2;
+   
     
 
   
@@ -182,17 +236,46 @@ section.visual .inner .photo-txt::before {
 }
 
 section.visual-01 .inner {
-    height: 600px;
-    background-color: #410b98;
-
+    height: 500px;
+    
+   
    
 
 }
-section.visual-01 .inner .about-me {
+section.visual-01 .inner .inner__wrap {
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0  auto;
     padding-top: 150px;
-    width: 500px;
     
-    margin:auto;
+
+}
+
+section.visual-01 .inner .inner__wrap .wrap__photo {
+    width: 170px;
+    height: 200px;
+    border-radius:100px  ;
+    overflow: hidden;
+    margin-right: 50px;
+    border: 7px solid #333;
+    position: relative;
+    
+}
+section.visual-01 .inner .inner__wrap .wrap__photo img {
+    
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+section.visual-01 .inner .about-me {
+   
+    width: 300px;
+    
+  
 }
 section.visual-01 .inner .about-me p{
     
@@ -203,7 +286,7 @@ section.visual-01 .inner .about-me p{
 }
 section.visual-02 .inner {
     height: 500px;
-    background-color: orange;
+   
    
 
 }
@@ -228,14 +311,55 @@ section.visual-02 .inner .plan p {
 }
 
 section.visual-03 .inner {
-    height: 600px;
-    background-color: purple; 
+    
+ 
     position: relative;
 }
+section.visual-03 .inner .photo-Frame {
+    
+    display: flex;
+    max-width: 1100px;
+   
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin:  auto;
+    
+    
+}
+section.visual-03 .inner .photo-Frame .frame__Photos {
+    width:300px;
+    height: 300px;
+    background-color: #333;
+    
+
+    margin-top: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+section.visual-03 .inner .photo-Frame .frame__Photos img {
+    width: 100%;
+    height: 100%;
+
+}
+section.visual-03 .inner .photo-Frame .frame__Photos:hover {
+    border: 3px solid rgb(158, 16, 168);
+    transition: 0.1s;
+    cursor: pointer;
+    
+}
+section.visual-03 .inner .photo-Frame .frame__Photos:hover img {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+
+/*슬라이드 주석*/
+/*
 section.visual-03 .inner .slide {
     width:1100px; 
-    height: 600px;;
-    background-color: red;
+    height: 600px;    
     position: absolute;
     top:50%;
     left:50%;
@@ -253,10 +377,10 @@ section.visual-03 .inner .slide .item {
     
 }
 
-
+*/
 section.visual-04 .inner {
-    height: 200px;
-    background-color: darkblue;
+    height: 400px;
+   
     position: relative;
 
 }
@@ -277,4 +401,13 @@ section.visual-04 .inner ul.contact li a i{
 section.visual-04 .inner ul.contact li  {
 
     margin:30px;
+}
+section.visual-04 .inner p {
+
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #fff;
 }

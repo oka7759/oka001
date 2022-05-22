@@ -146,6 +146,12 @@ header .inner .sub-menu .menu li a i {
     color:#fff;
 
 }
+
+header .inner .sub-menu .menu li a i:hover{
+    
+    color:rgba(0,0,0,0.4);
+
+}
 header .inner .main-menu{
     color: #fff;
     display: flex;
@@ -174,9 +180,12 @@ header .inner .main-menu .item .item__name {
 }
 header .inner .main-menu .item:hover .item__name {
     color:#333;
-    font-weight: 500 ;
+    font-weight: 800;
     cursor:pointer;
+    
 }
+
+
 
 /* SECTION */
 
@@ -203,6 +212,8 @@ section.visual .inner .photo {
     overflow: hidden;
     border-radius: 250px;
     box-sizing: border-box;
+ 
+   
 }
 section.visual .inner .photo img {
     width:100%;
@@ -399,6 +410,12 @@ section.visual-04 .inner ul.contact li a i{
 
     color: #fff;
     font-size: 50px;
+}
+section.visual-04 .inner ul.contact li a i:hover {
+
+    color: rgba(15,174,178,1);
+    transition: 0.5s;
+   
 }
 section.visual-04 .inner ul.contact li  {
 
